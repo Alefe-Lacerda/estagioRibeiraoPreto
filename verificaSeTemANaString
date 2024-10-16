@@ -1,0 +1,7 @@
+string = input('Escreva uma string: ')
+if "a" not in string and "A" not in string:
+    print('A string não contém a letra A')
+else:
+    quantidade_de_A = string.count('A')
+    quantidade_de_a = string.count('a')
+    print("Essa string contém", quantidade_de_a + quantidade_de_A, "letra(s) A")
