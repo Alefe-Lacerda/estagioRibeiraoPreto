@@ -1,0 +1,14 @@
+def fibonacci(n):
+    sequence = [0, 1]
+    while len(sequence) < n:
+        next_number = sequence[-1] + sequence[-2]
+        sequence.append(next_number)
+    return sequence
+
+n = 50
+result = fibonacci(n)
+number = int(input("Escreva um número: "))
+if number in fibonacci(n):
+    print("O número pertence à sequência fibonacci.")
+else:
+    print("O número não pertence à sequência fibonacci")
