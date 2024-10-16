@@ -1,0 +1,14 @@
+indice = 12
+soma = 0
+k = 1
+
+while k < indice:
+    k += 1
+    soma += k
+    
+print("O valor da variável SOMA é", soma)
+
+# Saída: o valor da variável SOMA é 77, apesar de o resultado verdadeiro ser 78,
+# ele está dando esse resultado pois é primeiro somado o "k = k + 1" ao invés de
+# ser somado primeiro a variável SOMA. O que traz como consequência que o pri-
+# meiro K (k=1) é desconsiderado
